@@ -1,17 +1,45 @@
 .header {
-width: 100%;
-}
-.menu-nav {
+  width: 100%;
+
+  &__nav {
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     position: sticky;
     top: 0;
-}
-.hamburguer-nav {
-margin: 55px 43px 0 33px;
+
+    &-desktop {
+      display: none;
+      
+			@media all and (min-width: 1200px) {
+				display: flex;
+				position: absolute;
+				top: 76px;
+				left: 100px;
+    	}
+
+      &-link {
+        margin-left: 30px;
+      }
+    }
+  }
+  &__hamburguer-nav {
+    position: absolute;
+    top: 55px;
+    left: 33px;
+
+		@media all and (min-width: 1200px) {
+			display: none;
+		}
+  }
+  &__logo-nav {
+    width: 214px;
+    margin-top: 19px;
+
+		@media all and (min-width: 1200px) {
+			width: 213px;
+      margin-top: 39px;
+		}
+  }
 }
 
-.logo-nav {
-width: 213px;
-margin-top: 19px;
-}
