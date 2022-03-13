@@ -1,18 +1,50 @@
 .footer {
-background-color: $spruce;
-color: $light-blue;
-    &__nav {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+  background-color: $spruce;
+  color: $light-blue;
+  padding-top: 36px;
+//   position: relative;
 
-        &-icon {
-            color: $white;
-        }
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 35%;
+
+     @media all and (min-width: 768px) {
+         flex-direction: row;
+         padding-left: 10%;
+     }
+
+    &-title {
+      margin-top: 20px;
+      font-size: 20px;
+      font-weight: 600;
+      
     }
 
-    &__arrow {
-        color: $white;
+    &-subtitle {
+      margin-top: 12px;
+      font-size: 14px;
     }
+    &-icon {
+      color: $white;
+      margin: 11px 0 63px 11px;
+      
+    }
+  }
+
+  &__arrow {
+    color: $white;
+    position: absolute;
+    right: 10%;
+    transform: translateY(-40px);
+  }
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
 }
