@@ -1,6 +1,5 @@
 .hero {
   height: 100vh;
-  margin-top: -116px;
 
   display: flex;
   justify-content: center;
@@ -10,8 +9,21 @@
   background-repeat: no-repeat;
   background-position: top;
 
+  &__logo-nav {
+      width: 214px;
+      top: 19px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+
+      @media all and (min-width: 768px) {
+        width: 213px;
+        top: 39px;
+      }
+    }
+
   @media all and (min-width: 1200px) {
-    margin-top: -134px;
+
   }
 
   &__container {
