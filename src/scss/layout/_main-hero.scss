@@ -10,20 +10,19 @@
   background-position: top;
 
   &__logo-nav {
-      width: 214px;
-      top: 19px;
-      position: absolute;
-      left: 50%;
-      transform: translateX(-50%);
+    width: 214px;
+    top: 19px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 
-      @media all and (min-width: 768px) {
-        width: 213px;
-        top: 39px;
-      }
+    @media all and (min-width: 768px) {
+      width: 213px;
+      top: 39px;
     }
+  }
 
   @media all and (min-width: 1200px) {
-
   }
 
   &__container {
@@ -34,25 +33,33 @@
     justify-content: center;
 
     @media all and (min-width: 768px) {
+      // align-items: flex-start;
+      // margin-left: 147px;
+      // FORZAR AL TEXTO A QUE OCUPE 2 LINEAS
       align-items: flex-start;
-      margin-left: 147px;
+      margin-left: -215px;
+      margin-top: 215px;
+      position: absolute;
+      width: 40%;
     }
 
     @media all and (min-width: 1200px) {
-      margin-left: 130px;
-      margin-top: -200px;
+      // margin-left: 130px;
+      // margin-top: -200px;
+      // FORZAR AL TEXTO A QUE OCUPE 2 LINEAS
+      margin-left: -660px;
+      margin-top: 200px;
+      width: 30%;
     }
 
     &-title {
       font-size: 24px;
       font-weight: 600;
       margin: 100px 0 24px;
-      
 
       @media all and (min-width: 768px) {
         font-size: 36px;
       }
-
     }
     &-button {
       color: $white;
