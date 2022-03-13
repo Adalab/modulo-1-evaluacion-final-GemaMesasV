@@ -1,0 +1,18 @@
+.footer {
+background-color: $spruce;
+color: $light-blue;
+    &__nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        &-icon {
+            color: $white;
+        }
+    }
+
+    &__arrow {
+        color: $white;
+    }
+}
