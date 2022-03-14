@@ -2,67 +2,210 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link email-->
+    <script
+      src="https://kit.fontawesome.com/07310f17cd.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- link email-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="icon" href="./assets/images/favicon.png" />
+    <title>Evaluación final Gema Mesas Velázquez</title>
   </head>
 
   <body>
-    <div class="page">
-      <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
-      </header>
+    <!-- HEADER -->
 
-      <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="header__nav-desktop">
+          <li class="header__nav-desktop-link">
+            <a href="https://youtu.be/UYIAfiVGluk" target="_blank">Productos</a>
           </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
+          <li class="header__nav-desktop-link">
+            <a href="https://youtu.be/uEcx-S69bWE" target="_blank">Colecciones</a>
+          </li>
+          <li class="header__nav-desktop-link">
+            <a href="https://youtu.be/d_HlPboLRL8" target="_blank">Tienda</a>
+          </li>
+          <li class="header__nav-desktop-link">
+            <a href="https://youtu.be/rtL5oMyBHPs" target="_blank">Inicio</a>
           </li>
         </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
+        <a
+          class="header__hamburguer-nav"
+          href="https://youtu.be/J6RH4rJjwFc"
+          target="_blank"
+          ><i class="fa-solid fa-bars"></i
+        ></a>
+      </nav>
+    </header>
+
+
+    <!-- MAIN -->
+
+    <main>
+      <section class="hero">
+        <img
+          class="hero__logo-nav"
+          src="./assets/images/logo.png"
+          alt="Logo de Open Spaces"
+        />
+        <div class="hero__container">
+          <h2 class="hero__container-title">Disfruta creando espacios</h2>
+
+          <button class="hero__container-button">
+            <a
+              class="hero__container-button-link"
+              href="https://youtu.be/bEp831gtIzg"
+              target="_blank"
+              >Comprar ahora</a
+            >
+          </button>
+        </div>
+      </section>
+
+      <section class="sub-hero">
+        <h1 class="sub-hero__title">
+          Volverse organizado se siente mejor con OPEN SPACES
+        </h1>
+        <article class="sub-hero__article">
+          <img src="./assets/images/icon_1.png" alt="Lo que necesitas" />
+          <div class="sub-hero__article-item">
+            <h3 class="sub-hero__article-item-h3">Lo que necesitas</h3>
+
+            <p>Una linea de productos diseñados para todos tus espacios</p>
+          </div>
+        </article>
+
+        <article class="sub-hero__article">
+          <img src="./assets/images/icon_2.png" alt="Materia primas sustentables" />
+          <div class="sub-hero__article-item">
+            <h3 class="sub-hero__article-item-h3">Materias primas sustentables</h3>
+
+            <p>Todos los productos con materias primas sustentables</p>
+          </div>
+        </article>
+
+        <article class="sub-hero__article">
+          <img src="./assets/images/icon_3.png" alt="Guía" />
+          <div class="sub-hero__article-item">
+            <h3 class="sub-hero__article-item-h3">Guía</h3>
+
+            <p>Soporte y asesoramiento para ayudarte con tu objetivo</p>
+          </div>
+        </article>
+      </section>
+
+      <section class="free-shipping">
+        <img
+          class="free-shipping__image"
+          src="./assets/images/icon_4.png"
+          alt="Envío gratis garantizado"
+        />
+        <h2 class="free-shipping__title">Envío gratis garantizado</h2>
+        <p class="free-shipping__subtitle">
+          Envío gratis en compras desde 100 simoleones
         </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+        <button class="free-shipping__button">
+          <a href="https://youtu.be/_gEzmL1DXr8" target="_blank">Comprar ahora</a>
+        </button>
+      </section>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
+      <section class="catalog">
+        <div class="catalog__item">
+          <h2 class="catalog__item-title">Disfruta creando espacios</h2>
+          <p class="catalog__item-subtitle">
+            Una línea de productos diseñados para todos tus espacios
+          </p>
 
-          </li>
-        </ul>
-      </main>
+          <button class="catalog__container-button">
+            <a
+              class="catalog__container-button-link"
+              href="https://youtu.be/kd7KC3PaEaA"
+              target="_blank"
+              >Comprar ahora</a
+            >
+          </button>
+        </div>
+        <img
+          class="catalog__image"
+          src="./assets/images/creando-espacios.jpg"
+          alt="Catálogo de Open Spaces"
+        />
+      </section>
 
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
+    </main>
 
-        </small>
-      </footer>
 
-    </div>
-    <script src="./assets/js/main.js"></script>
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <nav class="footer__nav">
+        <div>
+          <h3 class="footer__nav-title">Tienda</h3>
+          <ul class="footer__nav-subtitle">
+            <li><a href="https://adalab.es/" target="_blank">Productos</a></li>
+            <li><a href="https://adalab.es/" target="_blank">Cajoneras</a></li>
+            <li>
+              <a href="https://adalab.es/" target="_blank">Para toda la casa</a>
+            </li>
+            <li><a href="https://adalab.es/" target="_blank">Habitaciones</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__nav-title">Nosotros</h3>
+          <ul class="footer__nav-subtitle">
+            <li><a href="https://adalab.es/" target="_blank">Nuestra guía</a></li>
+            <li><a href="https://adalab.es/" target="_blank">Nuestro diseño</a></li>
+            <li>
+              <a href="https://adalab.es/" target="_blank">Nuestra historia</a>
+            </li>
+            <li><a href="https://adalab.es/" target="_blank">Ayuda</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="footer__nav-title">Contacto</h3>
+          <ul class="footer__nav-subtitle">
+            <li>
+              <a href="mailto:gema.mesas.v@gmail.com" target="_blank"
+                >gema.mesas.v@gmail.com</a
+              >
+            </li>
+            <li>
+              <a href="https://youtu.be/lAIGb1lfpBw" target="_blank">Socios</a>
+            </li>
+            <div class="icons-container">
+              <li class="footer__nav-icon">
+                <a href="https://www.linkedin.com/" target="_blank"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </li>
+              <li class="footer__nav-icon">
+                <a href="https://www.instagram.com/" target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li class="footer__nav-icon">
+                <a href="https://twitter.com/s" target="_blank"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+            </div>
+          </ul>
+        </div>
+      </nav>
+      <a class="footer__arrow" href="./index.html#top"
+        ><i class="fa-solid fa-arrow-up"></i
+      ></a>
+    </footer>
+
   </body>
 </html>
