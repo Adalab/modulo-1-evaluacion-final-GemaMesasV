@@ -3,6 +3,9 @@
   color: $light-blue;
   padding-top: 36px;
 //   position: relative;
+@media all and (min-width: 768px) {
+    padding: 71px 118px 74px 118px;
+}
 
   &__nav {
     display: flex;
@@ -13,7 +16,8 @@
 
      @media all and (min-width: 768px) {
          flex-direction: row;
-         padding-left: 10%;
+         justify-content: space-around;
+         padding: 0%;
      }
 
     &-title {

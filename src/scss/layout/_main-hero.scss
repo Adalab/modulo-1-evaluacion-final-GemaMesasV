@@ -67,8 +67,12 @@
       font-weight: 600;
       font-family: $font-text;
       text-transform: capitalize;
-      padding: 12px 24px;
+      padding: 12px 0;
       background-color: $spruce;
+
+      &-link {
+        padding: 12px 24px;
+      }
     }
   }
 }

@@ -38,5 +38,19 @@
       margin: 0;
     }
   }
+
+  &__container-button {
+    color: $white;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: $font-text;
+    text-transform: capitalize;
+    padding: 12px 0;
+    background-color: $spruce;
+
+    &-link {
+      padding: 12px 24px;
+    }
+  }
 }
 
