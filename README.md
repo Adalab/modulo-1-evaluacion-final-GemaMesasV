@@ -57,7 +57,7 @@ Para la maquetación he seguido el diseño dado en Zeplin y los criterios del ej
 
 - He cambiado detalles menores para personalizar mi proyecto:
   - Añadida la moneda ficticia "simoleones" en el texto " Envío gratis en compras desde 100" del tercer módulo.
-  - Añadidos enlaces a youtube con diferentes canciones en los diferentes botones/enlaces del proyecto excepto en los textos de la columna "NOSOTROS" y "TIENDA", los cuales son enlaces a la página de Adalab, tal y como se pide en el enunciado.
+  - Añadidos enlaces a youtube con diferentes canciones en los diferentes botones/enlaces del proyecto excepto en el menú hamburguesa y en los textos de la columna "NOSOTROS" y "TIENDA" del footer, los cuales son enlaces a la página de Adalab, tal y como se pide en el enunciado.
   
 Me encantará conocer vuestro feedback sobre mi proyecto. Me he divertido peleándome con el código y espero que os guste :)
 
