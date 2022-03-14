@@ -17,7 +17,7 @@ Mi proyecto se divide en:
 
 En *src* vereis que el apartado de html y el de scss se divide en varias carpetas con lo que llamamos *partials* , que son las diferentes partes en las que se ha dividido el proyecto.
 
-Por un lado tenemos **index.html ** **y **main.scss** en la raiz de la carpeta que son los archivos donde convergen los diferentes partials que he ido creando de forma que se conectan todos con el archivo principal, el cual es el que finalmente es mostrado cuando se inicia el proyecto.
+Por un lado tenemos **index.html ** y **main.scss** en la raiz de la carpeta que son los archivos donde convergen los diferentes partials que he ido creando de forma que se conectan todos con el archivo principal, el cual es el que finalmente es mostrado cuando se inicia el proyecto.
 
 Respecto al html, he hecho la división de la siguiente forma:
 + header
