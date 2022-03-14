@@ -1,124 +1,64 @@
-![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
+# Readme sobre mi proyecto de evaluación final del módulo 1
 
-# Adalab web starter kit
+¡Hola profes! 
 
-Ahoy! Este es nuestro Starter Kit creado en **node y gulp**. ¿Y qué es un Starter kit? Pues es una **plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas**.
+Este es el repositorio de mi proyecto para la evaluación final del módulo 1.
 
-Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. El Kit nos ayuda a trabajar más cómodamente, nos automatiza tareas.
+He de decir que han sido unos días muy intensos trabajando en él pero me siento muy orgullosa de haber podido terminarlo.
 
-En el Kit hay 3 tipos de ficheros y carpetas:
+**Me gustaría explicar en este readme los diferentes apartado del código para que podais consultarlo si lo necesitais:**
 
-- Los ficheros que están sueltos en la raíz del repositorio, como gulpfile.js, package.json... Son la configuración del proyecto y no necesitamos modificarlos.
-- La carpeta `src/`: son los ficheros de nuestra página web, como HTML, CSS, JS...
-- Las carpetas `public/` y `docs/`, que son generadas automáticamente cuando arrancamos el proyecto. El Kit lee los ficheros que hay dentro de `src/`, los procesa y los genera dentro de `public/` y `docs/`.
+El código está hecho con el *Adalab Web Started Kit*, al que le he borrado la información de ejemplo con la que venía y le he añadido la mía propia.
 
-## Guía de inicio rápido
+Mi proyecto se divide en:
+1.  HTML
+2. SCSS
+3. IMAGES
 
-> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) para trabajar con este Starter Kit:
+En *src* vereis que el apartado de html y el de scss se divide en varias carpetas con lo que llamamos *partials* , que son las diferentes partes en las que se ha dividido el proyecto.
 
-### Pasos a seguir cada vez que queremos arrancar un proyecto desde cero:
+Por un lado tenemos **index.html** y **main.scss** en la raiz de la carpeta que son los archivos donde convergen los diferentes partials que he ido creando de forma que se conectan todos con el archivo principal, el cual es el que finalmente es mostrado cuando se inicia el proyecto.
 
-1. **Crea tu propio repositorio.**
-1. Descarga este **Starter kit desde GitHub**.
-   - No recomendamos que clones este repo ya que no podrás añadir commits.
-1. **Copia todos los ficheros** de este Starter kit en la carpeta raíz de tu repositorio.
-   - Recuerda que debes copiar **también los ficheros ocultos**.
-   - Si has decidido clonar este repo, no debes copiar la carpeta `.git`. Si lo haces estarás machacando tu propio repositorio.
-1. **Abre una terminal** en la carpeta raíz de tu repositorio.
-1. **Instala las dependencias** locales ejecutando en la terminal el comando:
+Respecto al html, he hecho la división de la siguiente forma:
++ header
++ main
+    + hero
+    + sub-hero
+    + free-shipping
+	+ catalog
++ footer
 
-```bash
-npm install
-```
+El motivo por el que elegí esta disposición fue por identificar varias sub-partes en el main que podían hacer más sencillo el trabajo si se mantenían separadas unas de otras.
 
-### Pasos para arrancar el proyecto:
+Por otro lado, en scss decidí hacerlo respetando los nombres que había dado previamente en html a las secciones para que quedara más claro:
++ core
+    + reset
+    + variables
++ layout
+    + header
+    + main-hero
+	+ main-sub-hero
+	+ free-shipping-section
+	+ catalog
+	+ footer
++ pages
+    + index
 
-Una vez hemos instalado las dependencias, vamos a arrancar el proyecto. **El proyecto hay que arrancarlo cada vez que te pongas a programar.** Para ello ejecuta el comando:
+Para la maquetación he seguido el diseño dado en Zeplin y los criterios del ejercicio de evaluación. Es por eso que me gustaría detallar las decisiones que he tomado durante el proyecto:
+- El header es solamente el menú de navegación, en versión hamburguesa para móvil y tablet y completo para escritorio.
 
-```bash
-npm start
-```
+- El logo de Open Spaces inicialmente estaba en header, aunque lo moví a main -> main-hero por motivos de diseño, ya que quise hacer que sólo el menú de navegación fuera el que se mantuviera fijo a la hora de hacer scroll por la página.
 
-Este comando:
+- El primer módulo (Disfruta creando espacios): está maquetado con flexbox.
+- El segundo módulo (Volverse organizado se siente mejor con Open Spaces) está maquetado con CSS Grid .
+- El tercer módulo (Envío gratis garantizado) está maquetado con flexbox.
+- El cuarto módulo(Disfruta creando espacios) está maquetado con flexbox.
+- El quinto módulo (footer) está maquetado con flexbox.
 
-- **Abre una ventana de Chrome y muestra tu página web**, al igual que hace el plugin de VS Code Live Server (Go live).
-- También **observa** todos los ficheros que hay dentro de la carpeta `src/`, para que cada vez que modifiques un fichero **refresca tu página en Chrome**.
-- También **procesa los ficheros** HTML, SASS / CSS y JS y los **genera y guarda en la carpeta `public/`**. Por ejemplo:
-   - Convierte los ficheros SASS en CSS.
-   - Combina los diferentes ficheros de HTML y los agrupa en uno o varios ficheros HTML.
+- He cambiado detalles menores para personalizar mi proyecto:
+  - Añadida la moneda ficticia "simoleones" en el texto " Envío gratis en compras desde 100" del tercer módulo.
+  - Añadidos enlaces a youtube con diferentes canciones en los diferentes botones/enlaces del proyecto excepto en el menú hamburguesa y en los textos de la columna "NOSOTROS" y "TIENDA" del footer, los cuales son enlaces a la página de Adalab, tal y como se pide en el enunciado.
+  
+Me encantará conocer vuestro feedback sobre mi proyecto. Me he divertido peleándome con el código y espero que os guste :)
 
-Después de ejecutar `npm start` ya puedes empezar a editar todos los ficheros que están dentro de la carpeta `src/` y programar cómodamente.
-
-### Pasos para publicar el proyecto en GitHub Pages:
-
-Para generar tu página para producción ejecuta el comando:
-
-```bash
-npm run docs
-```
-
-Y a continuación:
-
-1. Sube a tu repo la carpeta `docs/` que se te acaba de generar.
-1. Entra en la pestaña `settings` de tu repo.
-1. Y en el apartado de GitHub Pages activa la opción **master branch /docs folder**.
-1. Y ya estaría!!!
-
-Además, los comandos:
-
-```bash
-npm run push-docs
-```
-o
-
-```bash
-npm run deploy
-```
-
-son un atajo que nos genera la versión de producción y hace push de la carpeta `docs/` del tirón. Te recomendamos ver el fichero `package.json` para aprender cómo funciona.
-
-## Flujo de archivos con Gulp
-
-Estas tareas de Gulp producen el siguiente flujo de archivos:
-
-![Gulp flow](./gulp-flow.png)
-
-## `gulpfile.js` y `config.json`
-
-Nuestro **gulpfile.js** usa el fichero `config.json` de configuración con las rutas de los archivos a generar / observar.
-
-De esta manera separarmos las acciones que están en `gulpfile.js` de la configuración de las acciones que están en `config.json`.
-
-## Estructura de carpetas
-
-La estructura de carpetas tiene esta pinta:
-
-```
-src
- ├─ api // los ficheros de esta carpeta se copian en public/api/
- |  └─ data.json
- ├─ images
- |  └─ logo.jpg
- ├─ js // los ficheros de esta carpeta se concatenan en el fichero main.js y este se guarda en public/main.js
- |  ├─ main.js
- |  └─ events.js
- ├─ scss
- |  ├─ components
- |  ├─ core
- |  ├─ layout
- |  └─ pages
- └─ html
-    └─ partials
-```
-
-> **NOTA:** Los partials de HTML y SASS del proyecto son orientativos. Te recomendamos usar los que quieras, y borrar los que no uses.
-
-## Vídeotutoriales del Starter kit
-
-- [Qué es, trabajar con la versión de desarrollo y rutas relativas](https://www.youtube.com/watch?v=XwvhXvBijos)
-- [Migración de un proyecto, trabajar con la versión de producción y GitHub Pages](https://www.youtube.com/watch?v=qqGClcgt9Uc)
-- [Motor de plantillas](https://www.youtube.com/watch?v=4GwXOJ045Zg)
-
-## Falta algo?
-
-Echas de menos que el kit haga algo en concreto? Pidelo sin problema a través de las issues o si te animas a mejorarlo mándanos un PR :)
+¡Que tengais un buen día!

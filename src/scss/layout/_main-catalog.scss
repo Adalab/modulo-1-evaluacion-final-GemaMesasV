@@ -47,10 +47,13 @@
     text-transform: capitalize;
     padding: 12px 0;
     background-color: $spruce;
+    transition: background-color ease 0.8s;
+    &:hover {
+      background-color: #0b7f09;
+    }
 
     &-link {
       padding: 12px 24px;
     }
   }
 }
-
