@@ -8,7 +8,7 @@ He de decir que han sido unos días muy intensos trabajando en él pero me sient
 
 **Me gustaría explicar en este readme los diferentes apartado del código para que podais consultarlo si lo necesitais:**
 
-El código está hecho con el Adalab Web Started Kit, al que le he borrado la información de ejemplo con la que venía y le he añadido la mía propia.
+El código está hecho con el *Adalab Web Started Kit*, al que le he borrado la información de ejemplo con la que venía y le he añadido la mía propia.
 
 Mi proyecto se divide en:
 1.  HTML
@@ -17,7 +17,7 @@ Mi proyecto se divide en:
 
 En *src* vereis que el apartado de html y el de scss se divide en varias carpetas con lo que llamamos *partials* , que son las diferentes partes en las que se ha dividido el proyecto.
 
-Por un lado tenemos **index.html **y **main.scss** en la raiz de la carpeta que son los archivos donde convergen los diferentes partials que he ido creando de forma que se conectan todos con el archivo principal, el cual es el que finalmente es mostrado cuando se inicia el proyecto.
+Por un lado tenemos **index.html ** **y **main.scss** en la raiz de la carpeta que son los archivos donde convergen los diferentes partials que he ido creando de forma que se conectan todos con el archivo principal, el cual es el que finalmente es mostrado cuando se inicia el proyecto.
 
 Respecto al html, he hecho la división de la siguiente forma:
 + header
@@ -51,7 +51,7 @@ Para la maquetación he seguido el diseño dado en Zeplin y los criterios del ej
 
 - El primer módulo (Disfruta creando espacios): está maquetado con flexbox.
 - El segundo módulo (Volverse organizado se siente mejor con Open Spaces) está maquetado con CSS Grid .
-- El tercer módulo (Envio gratis garantizado) está maquetado con flexbox.
+- El tercer módulo (Envío gratis garantizado) está maquetado con flexbox.
 - El cuarto módulo(Disfruta creando espacios) está maquetado con flexbox.
 - El quinto módulo (footer) está maquetado con flexbox.
 
