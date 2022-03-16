@@ -15,25 +15,44 @@
   &__title {
     font-size: 24px;
     font-weight: 600;
+    @media all and (max-width: 768px) {
+      order: 2;
+    }
   }
   &__subtitle {
     @media all and (max-width: 768px) {
       font-size: 14px;
+      order: 1;
     }
   }
 
+  // &__button {
+  //   font-size: 16px;
+  //   font-weight: 600;
+  //   background-color: $orange;
+  //   color: $white;
+  //   font-family: $font-text;
+  //   text-decoration: underline;
+  //   padding: 12px 24px;
+  //   margin-bottom: 63px;
+  //   transition: font-size ease-out 0.5s;
+  //   &:hover {
+  //     font-size: 20px;
   &__button {
+    color: $white;
     font-size: 16px;
     font-weight: 600;
-    background-color: $orange;
-    color: $white;
     font-family: $font-text;
-    text-decoration: underline;
+    text-transform: capitalize;
     padding: 12px 24px;
-    margin-bottom: 63px;
-    transition: font-size ease-out 0.5s;
+    background-color: $spruce;
+    margin-top: 20px;
+    transition: background-color ease 0.8s;
+    @media all and (max-width: 768px) {
+      order: 3;
+    }
     &:hover {
-      font-size: 20px;
+      background-color: #0b7f09;
     }
   }
 }

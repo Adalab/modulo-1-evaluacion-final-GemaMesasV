@@ -41,6 +41,11 @@
     position: absolute;
     right: 10%;
     transform: translateY(-40px);
+
+    @media all and (min-width: 768px) {
+      display: none;
+    }
+
   }
 }
 
